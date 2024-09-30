@@ -1,6 +1,6 @@
 ### 주요 구현사항
 #### Java Backend Engineer - 과제
-- 코디 완성 서비스 개발
+- 코디 완성 서비스 개발
 
 #### 구현 기술
 - SpringBoot + Gradle + JPA + H2
@@ -54,7 +54,7 @@
 # 빌드 결과물 Download link
 https://github.com/muhagaa/musinsa/raw/refs/heads/master/build/libs/item-0.0.1-SNAPSHOT.jar
 
-# 테스트 방법
+# 테스트 방법
 - Download link를 통해 jar 파일 다운로드
 - java -jar item-0.0.1-SNAPSHOT.jar
 
