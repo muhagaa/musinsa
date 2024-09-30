@@ -15,16 +15,16 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ItemRequest {
+    @NotBlank(message="brand는 필수값 입니다.")
+    private String brand;
+
     @NotBlank(message="category는 필수값 입니다.")
     @ValidCategory
     private String category;
 
-    @NotBlank(message="brand는 필수값 입니다.")
-    private String brand;
-
-    @NotNull(message="price는 필수값 입니다.")
+    @NotNull
     @Min(value = 1, message = "price는 0보다 커야 합니다.")
-    private Long price;
+    private long price;
 
     public Item toEntity() {
         return Item.builder()

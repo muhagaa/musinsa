@@ -11,10 +11,10 @@ import java.lang.annotation.Target;
 
 @Documented
 @Constraint(validatedBy = CategoryValidator.class)
-@Target({ElementType.METHOD, ElementType.FIELD, ElementType.PARAMETER, ElementType.ANNOTATION_TYPE })
+@Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ValidCategory {
-    String message() default "Invalid category";
+    String message() default "category가 올바르지 않습니다.";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }
